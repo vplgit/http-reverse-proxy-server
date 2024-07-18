@@ -1,9 +1,9 @@
 const proxyTable = {
-  "/web-app": {
+  "/fdm-app": {
     host: "https://65e1bfe3d0709bc55b36ed09--incandescent-valkyrie-ab707d.netlify.app/",
     port: null,
   },
-  "/fdm-app": {
+  "/web-app": {
     host: "https://669920d441910ecd3b6772cd--dashing-piroshki-574b16.netlify.app/",
     port: null,
   },
