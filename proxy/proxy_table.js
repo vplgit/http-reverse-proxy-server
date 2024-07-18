@@ -7,6 +7,10 @@ const proxyTable = {
     host: "https://669920d441910ecd3b6772cd--dashing-piroshki-574b16.netlify.app/",
     port: null,
   },
+  "/test-app": {
+    host: "http://www.example.org/api",
+    port: null,
+  },
 };
 
 module.exports = proxyTable;
