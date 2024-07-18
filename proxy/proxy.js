@@ -4,9 +4,9 @@ const createPortProxy = (port, host, pathPrefix) => {
   return createProxyMiddleware({
     target: port != null ? `http://${host}:${port}` : host,
     changeOrigin: true, // Needed for virtual hosted sites
-    // pathRewrite: {
-    //   [`^${pathPrefix}`]: "", // remove the pathPrefix from the path
-    // },
+    pathRewrite: {
+      [`^${pathPrefix}`]: "", // remove the pathPrefix from the path
+    },
 
     onProxyReq: (proxyReq, req, res) => {
       console.log(

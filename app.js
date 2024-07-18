@@ -20,10 +20,10 @@ const proxy = httpProxy.createProxyServer({});
 // });
 
 // Error handling
-proxy.on("error", (err, req, res) => {
-  console.error("Proxy Error:", err);
-  res.status(500).send("Proxy Error");
-});
+// proxy.on("error", (err, req, res) => {
+//   console.error("Proxy Error:", err);
+//   res.status(500).send("Proxy Error");
+// });
 
 //app.use(express.static(path.join(__dirname, "./my-react-app/src")));
 // Route to serve the specific static page for /api
